@@ -1,0 +1,32 @@
+provedor,cidade,estado,cobertura_fibra,velocidade_media_mbps
+Vivo,São Paulo,SP,85%,250 Mbps
+Claro,Rio de Janeiro,RJ,78%,200 Mbps
+Oi,Belo Horizonte,MG,67%,150 Mbps
+TIM,Salvador,BA,72%,180 Mbps
+Brisanet,Fortaleza,CE,81%,220 Mbps
+Algar,Uberlândia,MG,64%,120 Mbps
+Vivo,Curitiba,PR,86%,260 Mbps
+Claro,Porto Alegre,RS,79%,210 Mbps
+Oi,Recife,PE,68%,160 Mbps
+TIM,Manaus,AM,60%,130 Mbps
+Brisanet,Natal,RN,74%,190 Mbps
+Algar,Campinas,SP,70%,170 Mbps
+Vivo,Florianópolis,SC,83%,240 Mbps
+Claro,Goiânia,GO,75%,200 Mbps
+Oi,Belém,PA,61%,140 Mbps
+TIM,João Pessoa,PB,66%,150 Mbps
+Brisanet,Teresina,PI,73%,180 Mbps
+Algar,Maceió,AL,69%,160 Mbps
+Vivo,São Luís,MA,78%,210 Mbps
+Claro,Vitória,ES,77%,200 Mbps
+Oi,Cuiabá,MT,62%,135 Mbps
+TIM,Campo Grande,MS,65%,145 Mbps
+Brisanet,Porto Velho,RO,59%,120 Mbps
+Algar,Boa Vista,RR,58%,110 Mbps
+Vivo,Macapá,AP,63%,130 Mbps
+Claro,Palmas,TO,71%,175 Mbps
+Oi,Ribeirão Preto,SP,76%,190 Mbps
+TIM,Santos,SP,80%,220 Mbps
+Brisanet,Juiz de Fora,MG,68%,160 Mbps
+Algar,São José dos Campos,SP,75%,200 Mbps
+Claro,São Paulo,SP,65%,200 Mbps

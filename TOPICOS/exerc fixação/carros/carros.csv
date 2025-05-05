@@ -1,0 +1,58 @@
+marca,modelo,ano,preco,consumo_km_litro,tipo_motor
+Jeep,Compass,2022,160000,9.5,Diesel
+Hyundai,Creta,2021,122000,11.2,Gasolina
+Honda,City,2022,95000,13.0,Gasolina
+Fiat,Mobi,2019,52000,15.5,Álcool
+Tesla,Model Y,2023,400000,19.5,Elétrico
+Renault,Kwid,2019,47000,16.0,Álcool
+Volkswagen,T-Cross,2022,115000,12.5,Gasolina
+Ford,EcoSport,2019,89000,11.3,Gasolina
+BMW,X1,2022,270000,9.0,Híbrido
+Volkswagen,Polo,2021,67000,14.0,Gasolina
+Chevrolet,Equinox,2022,165000,9.5,Híbrido
+Honda,Fit,2019,75000,14.8,Gasolina
+Toyota,Hilux,2022,235000,7.2,Diesel
+Audi,R8,2023,900000,5.5,Gasolina
+Mitsubishi,ASX,2021,129000,9.8,Gasolina
+Ford,Maverick,2023,175000,9.0,Híbrido
+Fiat,Argo,2020,62000,13.7,Gasolina
+Nissan,Kicks,2021,105000,11.8,Híbrido
+Mercedes-Benz,GLA,2021,260000,8.5,Híbrido
+Suzuki,Jimny,2019,85000,11.5,Gasolina
+Toyota,Corolla,2022,120000,11.5,Híbrido
+Tesla,Cybertruck,2024,600000,18.0,Elétrico
+Citroën,C5 Aircross,2022,165000,10.2,Híbrido
+Renault,Logan,2018,60000,15.0,Gasolina
+Hyundai,IX35,2020,140000,10.5,Gasolina
+Chevrolet,Tracker,2022,109000,11.9,Gasolina
+Nissan,Frontier,2022,195000,7.8,Diesel
+Peugeot,408,2018,73000,13.0,Gasolina
+Fiat,Uno,2019,48000,14.5,Álcool
+Volkswagen,Virtus,2019,75000,13.0,Gasolina
+Volvo,XC90,2022,290000,9.5,Híbrido
+Toyota,SW4,2023,280000,8.5,Diesel
+Tesla,Model 3,2023,350000,20.0,Elétrico
+Peugeot,3008,2022,185000,9.7,Híbrido
+Ford,Focus,2018,75000,13.8,Gasolina
+Jeep,Grand Cherokee,2023,280000,9.0,Híbrido
+BMW,M3,2023,580000,6.5,Gasolina
+Honda,Civic,2021,110000,12.0,Gasolina
+Citroën,Aircross,2019,69000,13.5,Gasolina
+Hyundai,Tucson,2022,134000,9.8,Híbrido
+Mercedes-Benz,E300,2022,350000,8.8,Híbrido
+Volkswagen,Gol,2020,55000,13.5,Gasolina
+Nissan,Sentra,2023,110000,12.5,Gasolina
+Audi,A3,2022,210000,10.5,Gasolina
+Mitsubishi,Outlander,2022,195000,9.8,Híbrido
+Fiat,Cronos,2022,73000,13.5,Gasolina
+Toyota,Yaris,2022,97000,13.0,Híbrido
+Chevrolet,S10,2021,190000,8.0,Diesel
+Renault,Sandero,2021,65000,14.0,Gasolina
+Mercedes-Benz,C180,2021,230000,9.8,Gasolina
+Suzuki,Vitara,2020,115000,12.3,Gasolina
+Volkswagen,Jetta,2023,145000,11.0,Gasolina
+Volvo,XC40,2022,275000,8.8,Elétrico
+Honda,HR-V,2021,108000,12.4,Gasolina
+Chevrolet,Onix,2021,67000,12.8,Gasolina
+Tesla,Model S,2023,550000,22.0,Elétrico
+Ford,Ranger,2022,210000,7.5,Diesel
