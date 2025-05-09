@@ -16,4 +16,5 @@ assert RetornarValorS(0) == Exception
 assert RetornarValorS('a') == Exception
 assert RetornarValorS(2) == 1.5
 assert RetornarValorS(3) == 1.5 + 1/3
+assert RetornarValorS('') == Exception
 print('TESTES OK')
