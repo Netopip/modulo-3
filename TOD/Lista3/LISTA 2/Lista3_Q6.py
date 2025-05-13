@@ -24,5 +24,9 @@ def FaturamentoTotal(lista1:list,lista2:list):
     return faturamento,faturamentoTotal,mediaFaturamento,abaixoFaturamentos
 
 assert FaturamentoTotal([1,2,3,4,5],[6,7,8,9,10]) == ([6,14,24,36,50],sum([6,14,24,36,50]),26.0,3)
+assert FaturamentoTotal([1,2,3,4,5],['',2,3,4,5]) == Exception
+assert FaturamentoTotal([1.1,2,3,4,5],[8,9,10,11,12]) == Exception
+assert FaturamentoTotal(['a',2,3,'b',9],[7.7,5,0,3,2]) == Exception
+assert FaturamentoTotal([1,2,3,4,5],[6,7,8,9]) == Exception
 
 print('testes ok')
