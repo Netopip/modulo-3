@@ -36,7 +36,7 @@ def DesvioPadrao(dados):
 def ReceitaTotal(dados):
     
     ReceitaTotalA = np.sum([vendas_a[1]*vendas_a[2] for vendas_a in dados])
-    ReceitaTotalB = np.sum([vendas_a[1]*vendas_a[3] for vendas_a in dados])
+    ReceitaTotalB = np.sum([vendas_b[1]*vendas_b[3] for vendas_b in dados])
     
     return ReceitaTotalA,ReceitaTotalB
 
@@ -50,11 +50,11 @@ def ProdutoMaiorMargemLucro(dados):
     
 
 def AdicionarColuna(dataset):
+    
     ReceitaTotalA = np.array([vendas_a[1]*vendas_a[2] for vendas_a in dataset])
-    ReceitaTotalB = np.array([vendas_a[1]*vendas_a[3] for vendas_a in dataset])
-    #forma um array(no caso uma lista) com a receita total de A e B
-    
-    
+    ReceitaTotalB = np.array([vendas_b[1]*vendas_b[3] for vendas_b in dataset])
+
+
     ReceitaTotal = np.array([ReceitaTotalA[i] + ReceitaTotalB[i] for i in range(len(ReceitaTotalA)) ])
     dataset = np.column_stack((dataset,ReceitaTotal))
     
@@ -76,6 +76,7 @@ def OrdenarDataset(dataset,crescente=True):
         ordenar_indice = np.argsort(dataset[:,5])
     else:
         ordenar_indice = np.argsort(dataset[:,5])[::-1]
+        #invertende a ordem do array, especificado pela coluna 5
         
     dataset_ordenado = dataset[ordenar_indice]
     
