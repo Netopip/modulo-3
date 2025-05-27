@@ -54,4 +54,4 @@ def atualizar_veiculo(id:int, veiculo: VeiculoCreate):
     
 @roteador_veiculos.get('veiculos/{order_by}/{order}')
 def ordenar_veiculo(order_by:str = None, order:str = None):
-  
+  ...
