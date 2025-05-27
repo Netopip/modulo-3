@@ -35,6 +35,37 @@ class TaskDAO:
                 
                 tasks.append(task)
             return tasks
+        
+    def listar_task_id(self,user:Usuario,id:int):
+        with sqlite3.connect('banco.db') as con:
+            cursor = con.cursor()
+            query = 'select * from tarefa where usuario_id=? and id=?'
+            cursor.execute(query,(user.id,id))
+            
+            resultado = cursor.fetchone()
+            
+            if not resultado:
+                return None
+            
+            task = Task(id=resultado[0],
+                        titulo=resultado[1],
+                        descricao=resultado[2],
+                        concluida = resultado[3],
+                        usuario_id=resultado[4])
+            return task
+        
+        
+    def excluir_task(user:Usuario,id:int):
+        with sqlite3.connect('banco.db') as con:
+            cursor = con.cursor()
+            query = 'delete from * tarefa where usuario_id= and id=?'
+            cursor.execute(query,(user.id,id))
+            
+            resultado = cursor.fetchone()
+            
+            if not resultado:
+                return None
+            
            
         
     
