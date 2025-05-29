@@ -15,11 +15,12 @@ class TaskfasBase(BaseModel):
     titulo: str
     descricao : str | None = None
     concluida: bool = False
+    
    
     
 class Task(TaskfasBase):
     id : int | None = None
-    usuario_id : int | None=None
+    usuario_id : int | None = None
     
 class TaskCreate(TaskfasBase):
     ...

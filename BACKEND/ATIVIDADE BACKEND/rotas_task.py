@@ -16,20 +16,33 @@ def criar_task(novo:TaskCreate,user:Annotated[Usuario,Depends(get_current_user)]
 @route_task.get('/listartarefas',status_code=status.HTTP_200_OK)
 def listar_tasks(user:Annotated[Usuario,Depends(get_current_user)]):
     tasks = taskDAO.listar_tasks(user)
-    return tasks
+    if tasks:   
+        return tasks
+    
+    raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,detail='nenhuma task encontrada')
 
 @route_task.get('/listartarefas/{id}',status_code=status.HTTP_200_OK)
 def listar_tarefa_id(user:Annotated[Usuario,Depends(get_current_user)],id:int):
     tarefa = taskDAO.listar_task_id(user,id)
-    return tarefa
-
-@route_task.delete('/deletartarefa/{id}')
-def deletar_task(user:Annotated[Usuario,Depends(get_current_user)],id:int):
-    delete = taskDAO.listar_task_id(user,id)
     
-    if not delete :
+    if tarefa:
+        return tarefa
+    
+    raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST,detail='Não autorizado')
+
+@route_task.delete('/deletartarefa/{id}',status_code=status.HTTP_204_NO_CONTENT)
+def deletar_task(user:Annotated[Usuario,Depends(get_current_user)],id:int):
+    if listar_tarefa_id(user,id):
+        taskDAO.excluir_task(user,id)
+    else:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,detail='task não encontrada')
     
-    if delete:
-        taskDAO.excluir_task(delete)
     
+@route_task.put('/atualizartarefa/{id}',status_code=status.HTTP_200_OK)
+def atualizar_tarefa(user:Annotated[Usuario,Depends(get_current_user)],id:int,task:TaskCreate):
+    if listar_tarefa_id(user,id):
+        return taskDAO.atualizar_tarefa(task,user,id)
+        
+
+    else:
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST,detail='Não autorizado')

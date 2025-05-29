@@ -13,7 +13,7 @@ class TaskDAO:
             
             id = cursor.lastrowid
             
-            return Task(id=id,**task.dict())
+            return Task(id=id,usuario_id=user.id,**task.dict())
      
      
     def listar_tasks(self,user:Usuario):
@@ -55,16 +55,26 @@ class TaskDAO:
             return task
         
         
-    def excluir_task(user:Usuario,id:int):
+    def excluir_task(self,user:Usuario,id:int):
         with sqlite3.connect('banco.db') as con:
             cursor = con.cursor()
-            query = 'delete from * tarefa where usuario_id= and id=?'
+            query = 'delete from tarefa where usuario_id=? and id=?'
             cursor.execute(query,(user.id,id))
             
             resultado = cursor.fetchone()
             
             if not resultado:
                 return None
+            
+            
+    def atualizar_tarefa(self,task:Task,user:Usuario,id:int):
+        with sqlite3.connect('banco.db') as cone:
+            cursor = cone.cursor()
+            query = 'UPDATE tarefa set titulo=?, descricao=?, concluida=? where id =? and usuario_id=?'
+            cursor.execute(query,(task.titulo,task.descricao,task.concluida,id,user.id))
+            
+            return Task(id=id,usuario_id=user.id,**task.dict())
+            
             
            
         
