@@ -1,6 +1,8 @@
 from pydantic import BaseModel
 
 
+#modelo de usuario
+
 class UsuarioBase(BaseModel):
     username : str
     email : str
@@ -9,14 +11,13 @@ class UsuarioBase(BaseModel):
 class Usuario(UsuarioBase):
     id : int | None = None
 
-#tarefas
+# modelo de tarefas
 
 class TaskfasBase(BaseModel):
     titulo: str
     descricao : str | None = None
     concluida: bool = False
     
-   
     
 class Task(TaskfasBase):
     id : int | None = None
@@ -25,6 +26,7 @@ class Task(TaskfasBase):
 class TaskCreate(TaskfasBase):
     ...
     
+# modelo de autenticação
     
 class Singin(BaseModel):    
     email :str
