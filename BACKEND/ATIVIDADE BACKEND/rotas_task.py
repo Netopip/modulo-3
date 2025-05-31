@@ -46,3 +46,11 @@ def atualizar_tarefa(user:Annotated[Usuario,Depends(get_current_user)],id:int,ta
 
     else:
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST,detail='Não autorizado')
+
+@route_task.get('/me',status_code=status.HTTP_200_OK)
+def exibir_me(user:Annotated[Usuario,Depends(get_current_user)]):
+    return {
+        'Username':user.username,
+        'Email': user.email,
+        'Id': user.id        
+    }
