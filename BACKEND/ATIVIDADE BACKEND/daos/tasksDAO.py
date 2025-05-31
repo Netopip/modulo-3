@@ -1,5 +1,5 @@
 import sqlite3
-from model import Usuario,Task,TaskCreate
+from modelos.model import Usuario,Task,TaskCreate
 
 class TaskDAO:
     def __init__(self):

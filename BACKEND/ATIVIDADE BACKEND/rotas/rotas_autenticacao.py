@@ -1,7 +1,7 @@
 from fastapi import APIRouter,HTTPException,status
-from autenticacaoDAO import AutenticacaoDAO
-from model import SingUp,Singin
-from utilitarios import hash_password,verificar_hash_password,criar_toke_acesso
+from daos.autenticacaoDAO import AutenticacaoDAO
+from modelos.model import SingUp,Singin
+from utilitarios.utilitarios import hash_password,verificar_hash_password,criar_toke_acesso
 
 autenticacaoDAO = AutenticacaoDAO()
 

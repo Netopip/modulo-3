@@ -5,7 +5,7 @@ from fastapi.security import OAuth2PasswordBearer
 import jwt
 from passlib.context import CryptContext
 
-from autenticacaoDAO import AutenticacaoDAO
+from daos.autenticacaoDAO import AutenticacaoDAO
 
 autenticacaoDAO = AutenticacaoDAO()
 

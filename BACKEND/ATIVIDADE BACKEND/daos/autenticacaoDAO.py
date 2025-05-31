@@ -1,5 +1,5 @@
 import sqlite3
-from model import Usuario,Task, TaskCreate,Singin,SingUp
+from modelos.model import Usuario,SingUp
 
 class AutenticacaoDAO:
     def __init__(self):

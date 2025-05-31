@@ -1,7 +1,7 @@
 from fastapi import FastAPI,HTTPException,status
 from fastapi.routing import APIRouter
-from rotas_task import route_task
-from rotas_autenticacao import routs_autenticacao
+from rotas.rotas_task import route_task
+from rotas.rotas_autenticacao import routs_autenticacao
 
 
 

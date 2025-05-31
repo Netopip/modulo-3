@@ -1,8 +1,8 @@
 from fastapi import APIRouter,HTTPException,status,Depends
-from model import Usuario,Task,TaskCreate
+from modelos.model import Usuario,Task,TaskCreate
 from typing import Annotated
-from utilitarios import get_current_user
-from tasksDAO import TaskDAO
+from utilitarios.utilitarios import get_current_user
+from daos.tasksDAO import TaskDAO
 
 taskDAO = TaskDAO()
 
