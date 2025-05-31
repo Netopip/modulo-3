@@ -53,9 +53,8 @@ class AutenticacaoDAO:
 
             return Usuario(id=id, **usuario.dict())
         
-        
-        
     
+  
         
         
         
