@@ -4,7 +4,7 @@ FROM python:3.12.10-slim-bullseye
 WORKDIR /home/app
 
 # Copia o arquivo de dependências
-COPY requirements.txt .
+COPY requirements.txt
 
 # Instala as dependências
 RUN pip install --no-cache-dir -r requirements.txt
