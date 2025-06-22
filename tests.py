@@ -1,4 +1,5 @@
-
+import pydantic
+import typing
 
 def NumeroPar(n):
     if type(n)!= int:
@@ -18,3 +19,5 @@ if __name__ == '__main__':
     
 print('Te"stes ok')
     
+    
+
